@@ -1,0 +1,5 @@
+The code uses spline interpolation for warping the blocks. Specifically, it uses the cv2.resize() function from the OpenCV library, which by default uses spline interpolation (specifically, cubic interpolation) for resizing images.
+
+Spline interpolation is a technique that estimates pixel values based on nearby pixels to create a smooth and continuous transformation. In the context of image warping, spline interpolation is commonly used to calculate the pixel values of the warped block based on the original block's pixel values.
+
+By resizing the warped block to the original block size using spline interpolation, the code effectively warps the block while preserving the overall structure and appearance of the original image.
